@@ -5,10 +5,10 @@ class School
     @roster = {}
   end
   def add_student(name, grade)
-    roster[name] ||= []
-    roster[name] << grade
+    roster[grade] ||= []
+    roster[grade] << name
   end
   def grade(grade)
-    puts roster
+    
   end
 end
